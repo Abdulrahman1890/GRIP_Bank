@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen" >
+
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Welcome to our bank 🧡"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_below="@id/logo"
+            android:gravity="center"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/orange_button"
+            android:text="View Customers"
+            android:onClick="viewCustomers"
+            android:textColor="@drawable/button_color"
+            android:textSize="20sp" />
+
+
+</RelativeLayout>
